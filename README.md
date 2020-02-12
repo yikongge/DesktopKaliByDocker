@@ -7,10 +7,11 @@
 ```sh
 git clone https://github.com/yikongge/DesktopKaliByDocker.git
 cd DesktopKaliByDocker
+docker build -t kali ./file/
 chmod +x kali.sh
 ln -s kali.sh /usr/bin/kali
 
-docker run -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 -v ~/fileinkali:/media --restart=always -e DISPLAY=unix$DISPLAY -e GDK_SCALE -e GDK_DPI_SCALE -p 5091:5091 -it --name kali xiaomao33/kali /bin/bash
+docker run -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 -v ~/fileinkali:/media --restart=always -e DISPLAY=unix$DISPLAY -e GDK_SCALE -e GDK_DPI_SCALE -p 5091:5091 -it --name kali kali /bin/bash
 
 #第一次运行请在容器中执行 vncserver -geometry 1366x768 :2  设置默认密码
 ```
