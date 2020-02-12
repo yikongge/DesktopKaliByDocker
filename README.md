@@ -15,7 +15,7 @@ docker run -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 -v ~/fileinkali:/media --resta
 #第一次运行请在容器中执行 vncserver -geometry 1366x768 :2  设置默认密码
 ```
 
-![1581478625037](README/1581478625037.png)
+![1581478625037](README/1581478625037.jpg)
 
 ### use:
 
@@ -24,19 +24,19 @@ docker run -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 -v ~/fileinkali:/media --resta
 ```sh
 kali			#进入shell交互
 
-kali command 	#执行命令
+kali command 		#执行命令
 
 kali GUI 		#vnc链接界面
 ```
 
-![1581478679150](README/1581478679150.png)
+![1581478679150](README/1581478679150.jpg)
 
-![1581478816593](README/1581478816593.png)
+![1581478816593](README/1581478816593.jpg)
 
 在命令中执行带界面应用会直接宿主机打开
 
-![1581479170203](README/1581479170203.png)
+![1581479170203](README/1581479170203.jpg)
 
-![1581478941404](README/1581478941404.png)
+![1581478941404](README/1581478941404.jpg)
 
 另：  ~/fileinkali文件夹映射在容器/media下
