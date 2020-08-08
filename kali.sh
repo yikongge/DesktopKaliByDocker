@@ -16,7 +16,7 @@ then
  sleep 1
  docker exec -d kali vncserver -geometry 1366x768 :2
  sleep 1
- remmina -c kali.remmina
+ remmina -c ~/.kali.remmina
 elif [ "$1"x = "$in"x ]
 then
  docker exec -t kali rm /tmp/.X2-lock

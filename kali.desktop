@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version = 1.0
+Type = Application
+Name = kali
+Exec = /usr/bin/kali GUI
+GenericName = kali,msf
+Icon = /usr/share/icons/kali.svg
